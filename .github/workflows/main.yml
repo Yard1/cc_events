@@ -11,6 +11,7 @@ jobs:
     - uses: cwtools/CWTools-action@master
       with:
         game: stellaris
+        changedFilesOnly: 0
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Upload output.json
